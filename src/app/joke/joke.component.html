@@ -3,10 +3,7 @@
     {{data.setup}}
   </h4>
   <p class="card-text"
-     [hidden]="data.hide">{{data.punchline}}</p>
-  <a (click)="data.toggle()"
-     class="btn btn-warning">Tell Me
-  </a>
+     [style.display]="'none'">{{data.punchline}}</p>
   <a (click)="deleteItem()"
      class="btn btn-danger">Delete
   </a>
