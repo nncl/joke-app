@@ -1,10 +1,11 @@
-<div class="card card-block" appCardHover>
-  <h4 class="card-title">
-    {{data.setup}}
-  </h4>
-  <p class="card-text"
-     [style.display]="'none'">{{data.punchline}}</p>
-  <a (click)="deleteItem()"
-     class="btn btn-danger">Delete
-  </a>
+<div class="card card-block"
+     [appCardHover]="{querySelector: 'p'}">
+    <h4 class="card-title">
+        {{data.setup}}
+    </h4>
+    <p class="card-text"
+       [style.display]="'none'">{{data.punchline}}</p>
+    <a (click)="deleteItem()"
+       class="btn btn-danger">Delete
+    </a>
 </div>
