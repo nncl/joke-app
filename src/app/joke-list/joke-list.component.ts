@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Joke} from '../joke';
+import {Joke} from '../models/joke';
 
 @Component({
     selector: 'app-joke-list',
