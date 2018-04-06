@@ -5,7 +5,7 @@ import { Directive, ElementRef, HostBinding, HostListener, Input, Renderer2 } fr
 })
 export class CardHoverDirective {
     @HostBinding('class.card-outline-primary') private isHovering: boolean = false;
-    @Input('appCardHover') config: Object = {
+    @Input('appCardHover') config: any = {
         querySelector: '.card-text'
     };
 
