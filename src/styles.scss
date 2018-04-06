@@ -6,3 +6,21 @@
         border-color: blue;
     }
 }
+
+.has {
+    &-success {
+        color: green;
+
+        input {
+            border-color: green;
+        }
+    }
+
+    &-danger {
+        color: red;
+
+        input {
+            border-color: red;
+        }
+    }
+}
