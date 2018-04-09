@@ -9,6 +9,10 @@ import { JokeFormComponent } from './joke-form/joke-form.component';
 import { CardHoverDirective } from './directives/card-hover/card-hover.directive';
 import { ModelFormComponent } from './model-form/model-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { TemplateFormComponent } from './template-form/template-form.component';
+import { HttpComponent } from './http/http.component';
+import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -18,13 +22,15 @@ import { ReactiveFormsModule } from '@angular/forms';
         JokeComponent,
         JokeFormComponent,
         CardHoverDirective,
-        ModelFormComponent
+        ModelFormComponent,
+        TemplateFormComponent,
+        HttpComponent
     ],
     imports: [
         BrowserModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        HttpClientModule
     ],
-    providers: [],
     bootstrap: [AppComponent]
 })
 export class AppModule {
