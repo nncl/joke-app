@@ -25,10 +25,16 @@ export class HttpComponent implements OnInit {
 
     doPOST() {
         console.log('doPOST');
+        const url = `${this.apiRoot}/post`;
+        const params = {name: 'Caue', age: 23};
+        this.httpClient.post(url, {params: params}).subscribe(res => console.log(res));
     }
 
     doPUT() {
         console.log('doPUT');
+        const url = `${this.apiRoot}/put`;
+        const params = {name: 'Caue', age: 23};
+        this.httpClient.put(url, {params: params}).subscribe(res => console.log(res));
     }
 
     doDELETE() {
