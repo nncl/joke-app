@@ -17,9 +17,9 @@
 
 <ul class="list-group">
     <li *ngFor="let track of itunes.results" class="list-group-item">
-        <img src="{{track.artworkUrl30}}">
-        <a href="{{track.trackViewUrl}}" target="_blank">
-            {{track.trackName}}
+        <img src="{{track.thumbnail}}">
+        <a href="{{track.link}}" target="_blank">
+            {{track.name}}
         </a>
     </li>
 </ul>
