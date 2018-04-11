@@ -12,6 +12,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { TemplateFormComponent } from './template-form/template-form.component';
 import { HttpComponent } from './http/http.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CorsComponent } from './cors/cors.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { HttpClientModule } from '@angular/common/http';
         CardHoverDirective,
         ModelFormComponent,
         TemplateFormComponent,
-        HttpComponent
+        HttpComponent,
+        CorsComponent
     ],
     imports: [
         BrowserModule,
