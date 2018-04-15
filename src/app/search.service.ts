@@ -16,7 +16,8 @@ export class SearchService {
     }
 
     search(term: string): Observable<SearchItem[]> {
-        return this.httpClient.get(`${this.apiRoot}?term=${term}&media=music&limit=20`)
+        return this.httpClient
+            .jsonp(`${this.apiRoot}?term=${term}&media=music&limit=20`, 'callback')
             .map(res => {
                 const results = res['results'].map(item => {
                     return new SearchItem(

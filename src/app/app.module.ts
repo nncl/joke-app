@@ -11,7 +11,7 @@ import { ModelFormComponent } from './model-form/model-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { TemplateFormComponent } from './template-form/template-form.component';
 import { HttpComponent } from './http/http.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientJsonpModule, HttpClientModule } from '@angular/common/http';
 import { CorsComponent } from './cors/cors.component';
 
 
@@ -30,7 +30,8 @@ import { CorsComponent } from './cors/cors.component';
     imports: [
         BrowserModule,
         ReactiveFormsModule,
-        HttpClientModule
+        HttpClientModule,
+        HttpClientJsonpModule
     ],
     bootstrap: [AppComponent]
 })
