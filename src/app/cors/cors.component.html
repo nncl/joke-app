@@ -16,7 +16,8 @@
 </div>
 
 <ul class="list-group">
-    <li *ngFor="let track of itunes.results" class="list-group-item">
+    <!--async automatically subscribe/unsubscribe items from our observable-->
+    <li *ngFor="let track of results | async" class="list-group-item">
         <img src="{{track.thumbnail}}">
         <a href="{{track.link}}" target="_blank">
             {{track.name}}
